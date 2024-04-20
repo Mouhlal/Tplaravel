@@ -57,5 +57,9 @@ class LoginController extends Controller
     return redirect()->route('show')->with('sign','User created successfully! Please Login to continue');
 }
 
+public function details($id){
+    $clients = clients::findOrFail($id);
+    return view('books.details',compact('clients'));
 }
- 
+
+}

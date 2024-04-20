@@ -41,5 +41,7 @@ Route::post('/register',[LoginController::class,'register'])->name('register');
 
 Route::get('/logout',[LoginController::class,'logout'])->name('logout');
 
-Route::get('/art',[ArticleController::class,'index'])->name('index');
+Route::get('/details/{id}',[LoginController::class,'details'])->name('details');
 
+/* Route::get('/art',[ArticleController::class,'index'])->name('index');
+ */

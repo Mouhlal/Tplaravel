@@ -34,8 +34,8 @@
               <li class="nav-item">
                 <a href="#" class="nav-link"> {{ auth()->user()->name }} </a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"> <img src="{{ asset('storage/'.auth()->user()->image) }}" width="50px" height="60px" alt=""></a>
+              <li class="nav-item" >
+                <a href="{{route('details',auth()->user()->id)}}" class="nav-link"> <img src="{{ asset('storage/'.auth()->user()->image) }}" width="50px" height="60px" alt=""></a>
               </li>
 
               @endauth

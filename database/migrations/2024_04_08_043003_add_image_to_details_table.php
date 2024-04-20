@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        /* Schema::table('details', function (Blueprint $table) {
+         Schema::table('details', function (Blueprint $table) {
             $table->string('image')->after('id');
-        }); */
+        });
     }
 
     /**
@@ -21,9 +21,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-       /*  Schema::table('details', function (Blueprint $table) {
+         Schema::table('details', function (Blueprint $table) {
             //
-        }); */
+        });
     }
 };
- 
+
